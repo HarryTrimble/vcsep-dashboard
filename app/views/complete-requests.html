@@ -1,0 +1,99 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  National Needs Dashboard - VCSEP
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/">Emerging needs</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/new-requests">New requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/outstanding-requests">Outstanding requests</a>
+        </li>
+        <li>
+          <a class="govuk-!-font-weight-bold govuk-link govuk-link--no-visited-state" href="/complete-requests">Complete requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/response-times">Response times</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/nations-regions">Nations and regions</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state " href="/bame">BAME requests</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+
+      <h1 class="govuk-heading-l">
+        Complete requests
+      </h1>
+
+      <p>Requests from local organisatios responded to</p>
+
+      <div class="govuk-panel govuk-panel--confirmation" style="background-color: #1186c5;">
+        <h1 class="govuk-panel__title">
+          231 complete requests
+        </h1>
+      </div>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Organisation</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Need</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Area</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">When</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Trussle Trust</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Food</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Oldham</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">27  mins ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Care on the Coast</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Loneliness and isolation</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Devon</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">1 hour ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Different Strokes</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Physical health and disability</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Ashford</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">1 hour ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Trussle Trust</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Volunteers</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Tower Hamlets</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">2  hours ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Madina Mosque</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Medication</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Cardiff</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">3  hours ago</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#">View more (226)</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

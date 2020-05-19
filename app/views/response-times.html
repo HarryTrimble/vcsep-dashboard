@@ -1,0 +1,95 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  National Needs Dashboard - VCSEP
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/">Emerging needs</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/new-requests">New requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/outstanding-requests">Outstanding requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/complete-requests">Complete requests</a>
+        </li>
+        <li>
+          <a class="govuk-!-font-weight-bold govuk-link govuk-link--no-visited-state" href="/response-times">Response times</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/nations-regions">Nations and regions</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state " href="/bame">BAME requests</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+
+      <h1 class="govuk-heading-l">
+        Response times
+      </h1>
+
+      <p>Average time from a request from a local organisation to responding to their need</p>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Month</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Average response time</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Change</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">April 2020</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">18 days</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="govuk-tag govuk-tag--green" style="color: #454a4d; background-color: #eff0f1;">0%</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">May 2020</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">17 days</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="govuk-tag govuk-tag--green" style="color: #005a30; background-color: #cce2d8;">-6.6%</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">June 2020</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">19 days</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="govuk-tag govuk-tag--green" style="color: #942514; background-color: #f6d7d2;">+11.7%</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">July 2020</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">13 days</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="govuk-tag govuk-tag--green" style="color: #005a30; background-color: #cce2d8;">-32.6%</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">August 2020</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">11 days</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">
+              <strong class="govuk-tag govuk-tag--green" style="color: #005a30; background-color: #cce2d8;">-15.4%</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+{% endblock %}

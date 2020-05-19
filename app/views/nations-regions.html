@@ -1,0 +1,120 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  National Needs Dashboard - VCSEP
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/">Emerging needs</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/new-requests">New requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/outstanding-requests">Outstanding requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/complete-requests">Complete requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/response-times">Response times</a>
+        </li>
+        <li>
+          <a class="govuk-!-font-weight-bold govuk-link govuk-link--no-visited-state" href="/nations-regions">Nations and regions</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state " href="/bame">BAME requests</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+
+      <h1 class="govuk-heading-l">
+        Nations and regions
+      </h1>
+
+      <p>Request and needs by nation and region</p>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Organisation</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Total requests</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Top need</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">East Midlands</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">37</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">East of England</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">38</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">London</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">36</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">North East</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">38</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Northern Ireland</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">31</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Loneliness and isolation</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">North West</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">42</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Scotland</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">39</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Loneliness and isolation</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">South East</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">34</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">South West</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">37</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">West Midlands</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">39</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Wales</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">36</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Loneliness and isolation</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Yorkshire and The Humber</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">32</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+{% endblock %}

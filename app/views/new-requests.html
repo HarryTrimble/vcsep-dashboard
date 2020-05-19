@@ -1,0 +1,93 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  National Needs Dashboard - VCSEP
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/">Emerging needs</a>
+        </li>
+        <li>
+          <a class="govuk-!-font-weight-bold govuk-link govuk-link--no-visited-state" href="/new-requests">New requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/outstanding-requests">Outstanding requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/complete-requests">Complete requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/response-times">Response times</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/nations-regions">Nations and regions</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state " href="/bame">BAME requests</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+
+      <h1 class="govuk-heading-l">
+        New requests
+      </h1>
+
+      <p>Five newest requests local organisations</p>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Organisation</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Need</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Area</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">When</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Women's Alliance</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Domestic abuse</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Glamorgan</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">2 mins ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Sandylands Church</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Money and debt</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Cumbria</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">1 hour ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Mayfield Mosque</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Bereavement</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Glasgow</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">3 hour ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#"> Trussle Trust</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Food</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Brent</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">4 hour ago</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Action Age</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Loneliness and isolation</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">Darlington</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">7 hour ago</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#">View more (186)</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

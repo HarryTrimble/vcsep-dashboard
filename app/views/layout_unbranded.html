@@ -1,0 +1,59 @@
+{#- We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework. -#}
+{%- set assetPath = '/govuk/assets' -%}
+
+{% extends "govuk/template.njk" %}
+
+{% block headIcons %}
+  <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
+  <link rel="mask-icon" href="{{ asset_path }}images/gov.uk_logotype_crown.svg?0.18.3" color="#0b0c0c">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ asset_path }}images/apple-touch-icon-152x152.png?0.18.3">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ asset_path }}images/apple-touch-icon-120x120.png?0.18.3">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ asset_path }}images/apple-touch-icon-76x76.png?0.18.3">
+  <link rel="apple-touch-icon-precomposed" href="{{ asset_path }}images/apple-touch-icon-60x60.png?0.18.3">
+{% endblock %}
+
+{% block head %}
+  <link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block header %}
+{% include "includes/header.html" %}
+<header id="brc-header" class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #434142;">
+  <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px;">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+        <div>
+          <p id="phase-banner" class="govuk-phase-banner__content" style="margin-bottom: 10px;">
+            <strong id="phase-tag" class="govuk-tag govuk-phase-banner__content__tag">
+              new request
+            </strong>
+            <span class="govuk-phase-banner__text">
+              2 minutes ago - domestic abuse charity, Glamorgan
+            </span>
+          </p>
+        </div>
+        </div>
+    </div>
+
+  </div>
+</header>
+<header id="home-banner" class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #f5a036;">
+    <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px; padding-bottom: 35px; padding-top: 25px;">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+          <h1 class="govuk-heading-xl" style="margin-bottom: 5px; margin-top: 5px; color: #434142">
+            National Needs Dashboard
+          </h1>
+        </div>
+      </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block footer %}{% endblock %}
+
+{% block bodyEnd %}
+  {% include "includes/scripts.html" %}
+{% endblock %}

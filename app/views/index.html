@@ -1,0 +1,87 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  National Needs Dashboard - VCSEP
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-!-font-weight-bold govuk-link govuk-link--no-visited-state" href="/">Emerging needs</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/new-requests">New requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/outstanding-requests">Outstanding requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/complete-requests">Complete requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/response-times">Response times</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/nations-regions">Nations and regions</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state " href="/bame">BAME requests</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+
+      <h1 class="govuk-heading-l">
+        Emerging needs
+      </h1>
+
+      <p>Top five unmet needs reported most in the last seven days</p>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Need</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Requests</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Estimated people in need</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Money and debt</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">41</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">140,500</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Loneliness and isolation</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">23</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">32,500</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Domestic abuse</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">21</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">29,000</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Phyiscal health and disability</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">13</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">13,000</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Bereavement</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">9</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">5,300</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#">View more</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block headIcons %}
+  <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
+  <link rel="mask-icon" href="{{ asset_path }}images/gov.uk_logotype_crown.svg?0.18.3" color="#0b0c0c">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ asset_path }}images/apple-touch-icon-152x152.png?0.18.3">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ asset_path }}images/apple-touch-icon-120x120.png?0.18.3">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ asset_path }}images/apple-touch-icon-76x76.png?0.18.3">
+  <link rel="apple-touch-icon-precomposed" href="{{ asset_path }}images/apple-touch-icon-60x60.png?0.18.3">
+{% endblock %}
+
+{% block head %}
+  <!--[if lte IE 8]><link href="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if gt IE 8]><!--><link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+  {% for stylesheetUrl in extensionConfig.stylesheets %}
+    <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
+  {% endfor %}
+
+  <link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Primary Meta Tags -->
+  <title>Get Help as a Local Organisation - VCS Emergencies Partnership</title>
+  <meta name="title" content="Get Help as a Local Organisation - VCS Emergencies Partnership">
+  <meta name="description" content="A service to request help as a local organisation">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://support-for-orgs-vcsep.herokuapp.com/">
+  <meta property="og:title" content="Get Help as a Local Organisation - VCS Emergencies Partnership">
+  <meta property="og:description" content="A service to request help as a local organisation">
+  <meta property="og:image" content="https://support-line-operator-manual.herokuapp.com/public/images/twitter-card.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://support-for-orgs-vcsep.herokuapp.com/">
+  <meta property="twitter:title" content="Get Help as a Local Organisation - VCS Emergencies Partnership">
+  <meta property="twitter:description" content="A service to request help as a local organisation">
+  <meta property="twitter:image" content="https://support-line-operator-manual.herokuapp.com/public/images/twitter-card.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161865344-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161865344-1');
+  </script>
+
+{% endblock %}
+
+{% block header %}
+	{% include "includes/header.html" %}
+
+{% endblock %}
+{% block footer %}
+	{% include "includes/footer.html" %}
+{% endblock %}

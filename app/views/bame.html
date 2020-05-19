@@ -1,0 +1,135 @@
+
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  National Needs Dashboard - VCSEP
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/">Emerging needs</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/new-requests">New requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/outstanding-requests">Outstanding requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/complete-requests">Complete requests</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/response-times">Response times</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="/nations-regions">Nations and regions</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold" href="/bame">BAME requests</a>
+        </li>
+      </ul>
+    </div>
+    <div class="govuk-grid-column-three-quarters">
+
+      <h1 class="govuk-heading-l">
+        BAME requests
+      </h1>
+
+      <p>Total requests from local organisations identifying as Black, Asian and minority ethnic</p>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Ethic group</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Requests</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">% of total requests</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total BAME requests</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">23</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">5.2%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">White and Black Caribbean</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">White and Black African</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">White and Asian</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">1</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0.2%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Any other Mixed / Multiple ethnic background</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">4</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0.9%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Indian</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">5</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">1.1%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Pakistani</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">4</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0.9%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Bangladeshi</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Chinese</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">1</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0.2%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Any other Asian background</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">African</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">2</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0.4%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Caribbean</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">4</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0.9%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Any other Black / African / Caribbean background</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Arab</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0%</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="#">Any other ethnic group</a></th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">2</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0.4%</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+{% endblock %}
